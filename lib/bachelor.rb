@@ -44,7 +44,7 @@ end
 def get_average_age_for_season(data, season)
   sum_ages = 0
   data[season].each do |hash|
-    sum_ages = sum_ages + hash["age"].to_i
+    sum_ages = sum_ages + hash["age"].to_f
   end
   number = data[season].length
   average_age = sum_ages / number
